@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}} · Fernhill Academy</title>
+<meta name="description" content="Fernhill Academy: online courses in programming, design, languages and more.">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/core.js" defer></script>
+{{scripts}}
+</head>
+<body data-page="{{page}}" data-role="{{role}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="/"><span class="logo-mark" aria-hidden="true">F</span> Fernhill <span>Academy</span></a>
+    <nav class="nav" aria-label="Main">{{nav}}</nav>
+    <span class="account">{{account}}</span>
+  </div>
+</header>
+<main id="main" class="wrap">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p><strong>Fernhill Academy</strong> · Demo learning site for QA testing. No real courses, grades or certificates.</p>
+    <p><a href="/help">How grading works</a></p>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

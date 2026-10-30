@@ -1,0 +1,17 @@
+<h1>Teaching</h1>
+<section class="section">
+  <h2>Your courses</h2>
+  <div id="t-courses" class="grid"></div>
+</section>
+<section class="section">
+  <div class="section-head"><h2>Grading</h2>
+    <div class="actions"><label for="t-assignment">Assignment</label><select id="t-assignment"></select>
+      <button type="button" id="release" class="btn">Release grades</button></div></div>
+  <div class="table-wrap">
+    <table class="table" aria-label="Submissions">
+      <thead><tr><th>Student</th><th>Submitted</th><th>File</th><th>Score</th><th>Status</th></tr></thead>
+      <tbody id="t-queue"></tbody>
+    </table>
+  </div>
+  <p id="t-msg" class="msg" role="status"></p>
+</section>

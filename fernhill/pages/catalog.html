@@ -1,0 +1,17 @@
+<section class="hero">
+  <h1>Learn something new this week.</h1>
+  <p>Self-paced courses with quizzes, projects and a certificate when you finish.</p>
+</section>
+<form id="filters" class="filters card" novalidate role="search">
+  <div class="field grow"><label for="q">Search courses</label><input id="q" type="search" placeholder="e.g. Python, español, café"></div>
+  <div class="field"><label for="topic">Topic</label>
+    <select id="topic"><option value="">All topics</option><option>Programming</option><option>Design</option>
+      <option>Languages</option><option>Math</option><option>Business</option><option>Arts</option></select></div>
+  <div class="field"><label for="level">Level</label>
+    <select id="level"><option value="">All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div>
+  <div class="field"><label for="sort">Sort by</label>
+    <select id="sort"><option value="popular">Most popular</option><option value="rating">Highest rated</option><option value="newest">Newest</option></select></div>
+</form>
+<p id="count" class="muted" role="status" aria-live="polite"></p>
+<div id="courses" class="grid"></div>
+<p class="center"><button type="button" id="more" class="btn btn-ghost" hidden>Load more courses</button></p>

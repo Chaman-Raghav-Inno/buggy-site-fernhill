@@ -1,0 +1,15 @@
+<p><a id="f-back">← Course page</a></p>
+<h1>Discussion</h1>
+<div class="grid-2 forum-grid">
+  <section>
+    <ul id="threads" class="list card"></ul>
+    <nav class="pager" aria-label="Pages"><button type="button" id="f-prev" class="btn btn-ghost btn-small">Newer</button><span id="f-page"></span><button type="button" id="f-next" class="btn btn-ghost btn-small">Older</button></nav>
+  </section>
+  <form id="new-thread" class="card" novalidate>
+    <h2>Start a discussion</h2>
+    <div class="field"><label for="t-title">Title</label><input id="t-title" maxlength="120"></div>
+    <div class="field"><label for="t-body">Message</label><textarea id="t-body" rows="6" maxlength="1000"></textarea><p class="hint" id="t-count">0 / 1000</p></div>
+    <p id="t-msg" class="msg" role="status"></p>
+    <button type="submit" class="btn">Post</button>
+  </form>
+</div>
