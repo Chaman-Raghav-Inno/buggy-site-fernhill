@@ -1,0 +1,34 @@
+<p id="loading" class="muted">Loading…</p>
+<article id="course" hidden>
+  <header class="course-head card">
+    <div>
+      <p class="eyebrow" id="c-topic"></p>
+      <h1 id="c-title"></h1>
+      <p id="c-summary"></p>
+      <p class="muted" id="c-meta"></p>
+      <p class="muted" id="c-instructor"></p>
+    </div>
+    <div class="enroll-box">
+      <p id="c-seats" class="seats"></p>
+      <p id="c-prereq" class="prereq" hidden></p>
+      <div id="c-progress" hidden><p><strong id="c-pct"></strong> complete</p><div class="bar"><span id="c-bar"></span></div></div>
+      <button type="button" id="enroll" class="btn btn-block">Enroll for free</button>
+      <a id="continue" class="btn btn-block" hidden>Go to course</a>
+      <p id="c-msg" class="msg" role="status"></p>
+    </div>
+  </header>
+  <div class="course-grid">
+    <section class="card">
+      <h2>Syllabus</h2>
+      <p class="muted" id="c-count"></p>
+      <ol id="syllabus" class="syllabus"></ol>
+    </section>
+    <aside>
+      <section class="card" id="work" hidden>
+        <h2>Quizzes and assignments</h2>
+        <ul id="c-work" class="list"></ul>
+        <p class="links"><a id="c-grades">Grades</a> · <a id="c-forum">Discussion</a> · <a id="c-cert">Certificate</a></p>
+      </section>
+    </aside>
+  </div>
+</article>

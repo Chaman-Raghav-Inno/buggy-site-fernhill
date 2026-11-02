@@ -1,0 +1,36 @@
+<p id="loading" class="muted">Loading…</p>
+<div id="intro" class="card narrow" hidden>
+  <h1 id="q-title"></h1>
+  <ul class="list" id="q-rules"></ul>
+  <ul class="list" id="q-history"></ul>
+  <button type="button" id="start" class="btn">Start quiz</button>
+  <p id="q-msg" class="msg error" role="alert"></p>
+</div>
+<div id="taking" class="quiz" hidden>
+  <div class="quiz-bar card">
+    <strong id="q-progress"></strong>
+    <span class="timer" id="timer" aria-live="off"></span>
+  </div>
+  <div class="quiz-grid">
+    <nav class="card qnav" aria-label="Questions"><div id="qnav"></div></nav>
+    <section class="card">
+      <form id="question" novalidate></form>
+      <div class="quiz-actions">
+        <button type="button" id="flag" class="btn btn-ghost" aria-pressed="false">⚑ Flag for review</button>
+        <span class="spacer"></span>
+        <button type="button" id="q-prev" class="btn btn-ghost">Previous</button>
+        <button type="button" id="q-next" class="btn">Next</button>
+        <button type="button" id="submit" class="btn">Submit quiz</button>
+      </div>
+    </section>
+  </div>
+</div>
+<div id="result" class="card narrow" hidden></div>
+<dialog id="confirm" aria-labelledby="confirm-title">
+  <h2 id="confirm-title">Submit your answers?</h2>
+  <p id="confirm-text"></p>
+  <div class="dialog-actions">
+    <button type="button" class="btn btn-ghost" data-value="back">Keep working</button>
+    <button type="button" class="btn" data-value="submit">Submit</button>
+  </div>
+</dialog>

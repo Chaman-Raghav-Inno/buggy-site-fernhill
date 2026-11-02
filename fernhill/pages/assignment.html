@@ -1,0 +1,24 @@
+<p id="loading" class="muted">Loading…</p>
+<div id="assignment" class="grid-2" hidden>
+  <section class="card">
+    <p class="eyebrow" id="a-course"></p>
+    <h1 id="a-title"></h1>
+    <p id="a-brief"></p>
+    <dl class="facts" id="a-facts"></dl>
+    <div id="a-status"></div>
+  </section>
+  <form id="a-form" class="card" novalidate>
+    <h2 id="a-form-title">Your submission</h2>
+    <div class="field">
+      <label for="a-file">File (PDF, TXT, DOCX or PY, up to 2 MB)</label>
+      <input id="a-file" type="file" accept=".pdf,.txt,.docx,.py">
+    </div>
+    <div class="field">
+      <label for="a-text">Written answer</label>
+      <textarea id="a-text" rows="9"></textarea>
+      <p id="a-words" class="hint"></p>
+    </div>
+    <p id="a-msg" class="msg" role="status"></p>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,27 @@
+<p id="loading" class="muted">Loading…</p>
+<div id="player" class="player" hidden>
+  <aside class="card outline">
+    <p><a id="back-course">← Course page</a></p>
+    <h2 id="l-course"></h2>
+    <div class="bar"><span id="l-bar"></span></div>
+    <p class="muted small" id="l-pct"></p>
+    <nav id="outline" aria-label="Lessons"></nav>
+  </aside>
+  <section class="card lesson">
+    <p class="eyebrow" id="l-module"></p>
+    <h1 id="l-title"></h1>
+    <p class="muted" id="l-minutes"></p>
+    <div id="l-body" class="lesson-body"></div>
+    <label class="check done-toggle"><input type="checkbox" id="l-done"> Mark this lesson complete</label>
+    <div class="field">
+      <label for="notes">Your notes</label>
+      <textarea id="notes" rows="5" placeholder="Notes save automatically."></textarea>
+      <p id="notes-state" class="hint" aria-live="polite"></p>
+    </div>
+    <div class="lesson-nav">
+      <button type="button" id="prev" class="btn btn-ghost">← Previous</button>
+      <button type="button" id="next" class="btn">Next lesson →</button>
+    </div>
+    <p class="muted small">Tip: use the ← and → keys to move between lessons.</p>
+  </section>
+</div>
